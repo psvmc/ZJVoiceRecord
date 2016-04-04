@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VWx-jU-ZRo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDG-Ec-NH0">
+                                        <rect key="frame" x="20" y="448" width="280" height="40"/>
+                                        <color key="backgroundColor" red="0.29803921570000003" green="0.63529411759999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="YJ6-fE-6Ah"/>
+                                        </constraints>
+                                        <state key="normal" title="播 放">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMr-5D-Sq8">
+                                        <rect key="frame" x="20" y="508" width="280" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.50125786660000005" blue="0.12932045049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="jQz-E9-5ip"/>
+                                        </constraints>
+                                        <state key="normal" title="按住 说话">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="zMr-5D-Sq8" secondAttribute="bottom" constant="20" id="Syh-Rr-cgS"/>
+                                    <constraint firstItem="VDG-Ec-NH0" firstAttribute="leading" secondItem="VWx-jU-ZRo" secondAttribute="leading" constant="20" id="TBl-G6-ZuI"/>
+                                    <constraint firstItem="zMr-5D-Sq8" firstAttribute="top" secondItem="VDG-Ec-NH0" secondAttribute="bottom" constant="20" id="VZH-tb-RIF"/>
+                                    <constraint firstAttribute="trailing" secondItem="zMr-5D-Sq8" secondAttribute="trailing" constant="20" id="fCI-4O-L2j"/>
+                                    <constraint firstItem="zMr-5D-Sq8" firstAttribute="leading" secondItem="VWx-jU-ZRo" secondAttribute="leading" constant="20" id="i7V-L6-XtD"/>
+                                    <constraint firstAttribute="trailing" secondItem="VDG-Ec-NH0" secondAttribute="trailing" constant="20" id="mij-mF-Eu5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VWx-jU-ZRo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0y2-CO-eCN"/>
+                            <constraint firstItem="VWx-jU-ZRo" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Pxv-KZ-9ma"/>
+                            <constraint firstItem="VWx-jU-ZRo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="bOE-zQ-gNX"/>
+                            <constraint firstItem="VWx-jU-ZRo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="y2c-Gi-33i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="VDG-Ec-NH0" id="40C-ZD-LTn"/>
+                        <outlet property="voiceRecordButton" destination="zMr-5D-Sq8" id="yyW-BV-6FC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162.66666666666666" y="330.86000000000001"/>
+        </scene>
+    </scenes>
+</document>
