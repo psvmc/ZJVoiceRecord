@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F7B35DC1CB2C02300EAA389 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7B35DB1CB2C02300EAA389 /* AssetsLibrary.framework */; };
 		3F95A1FC1CB2775500E22C14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F95A1FB1CB2775500E22C14 /* main.m */; };
 		3F95A1FF1CB2775500E22C14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F95A1FE1CB2775500E22C14 /* AppDelegate.m */; };
 		3F95A2021CB2775500E22C14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F95A2011CB2775500E22C14 /* ViewController.m */; };
@@ -14,7 +15,6 @@
 		3F95A2071CB2775500E22C14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F95A2061CB2775500E22C14 /* Assets.xcassets */; };
 		3F95A20A1CB2775500E22C14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F95A2081CB2775500E22C14 /* LaunchScreen.storyboard */; };
 		3F95A2151CB2775500E22C14 /* ZJVoiceRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F95A2141CB2775500E22C14 /* ZJVoiceRecordTests.m */; };
-		3F95A2201CB2775500E22C14 /* ZJVoiceRecordUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F95A21F1CB2775500E22C14 /* ZJVoiceRecordUITests.m */; };
 		3F95A22E1CB27B7B00E22C14 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F95A22D1CB27B7B00E22C14 /* AVFoundation.framework */; };
 		3F95A2301CB27B8700E22C14 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F95A22F1CB27B8700E22C14 /* CoreAudio.framework */; };
 /* End PBXBuildFile section */
@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F7B35DB1CB2C02300EAA389 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		3F95A1F71CB2775400E22C14 /* ZJVoiceRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJVoiceRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F95A1FB1CB2775500E22C14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F95A1FD1CB2775500E22C14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,8 +52,6 @@
 		3F95A2141CB2775500E22C14 /* ZJVoiceRecordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJVoiceRecordTests.m; sourceTree = "<group>"; };
 		3F95A2161CB2775500E22C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F95A21B1CB2775500E22C14 /* ZJVoiceRecordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJVoiceRecordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F95A21F1CB2775500E22C14 /* ZJVoiceRecordUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJVoiceRecordUITests.m; sourceTree = "<group>"; };
-		3F95A2211CB2775500E22C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F95A22D1CB27B7B00E22C14 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3F95A22F1CB27B8700E22C14 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -62,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7B35DC1CB2C02300EAA389 /* AssetsLibrary.framework in Frameworks */,
 				3F95A2301CB27B8700E22C14 /* CoreAudio.framework in Frameworks */,
 				3F95A22E1CB27B7B00E22C14 /* AVFoundation.framework in Frameworks */,
 			);
@@ -90,7 +90,6 @@
 				3F95A2311CB27B9600E22C14 /* Framework */,
 				3F95A1F91CB2775500E22C14 /* ZJVoiceRecord */,
 				3F95A2131CB2775500E22C14 /* ZJVoiceRecordTests */,
-				3F95A21E1CB2775500E22C14 /* ZJVoiceRecordUITests */,
 				3F95A1F81CB2775400E22C14 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -138,18 +137,10 @@
 			path = ZJVoiceRecordTests;
 			sourceTree = "<group>";
 		};
-		3F95A21E1CB2775500E22C14 /* ZJVoiceRecordUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3F95A21F1CB2775500E22C14 /* ZJVoiceRecordUITests.m */,
-				3F95A2211CB2775500E22C14 /* Info.plist */,
-			);
-			path = ZJVoiceRecordUITests;
-			sourceTree = "<group>";
-		};
 		3F95A2311CB27B9600E22C14 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				3F7B35DB1CB2C02300EAA389 /* AssetsLibrary.framework */,
 				3F95A22F1CB27B8700E22C14 /* CoreAudio.framework */,
 				3F95A22D1CB27B7B00E22C14 /* AVFoundation.framework */,
 			);
@@ -304,7 +295,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F95A2201CB2775500E22C14 /* ZJVoiceRecordUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +502,7 @@
 				3F95A2261CB2775500E22C14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F95A2271CB2775500E22C14 /* Build configuration list for PBXNativeTarget "ZJVoiceRecordTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +511,7 @@
 				3F95A2291CB2775500E22C14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F95A22A1CB2775500E22C14 /* Build configuration list for PBXNativeTarget "ZJVoiceRecordUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +520,7 @@
 				3F95A22C1CB2775500E22C14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

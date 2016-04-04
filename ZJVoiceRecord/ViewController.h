@@ -10,7 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <CoreAudio/CoreAudioTypes.h>
 
-@interface ViewController : UIViewController <AVAudioRecorderDelegate>
+@interface ViewController : UIViewController <AVAudioRecorderDelegate,AVAudioPlayerDelegate>
 
 @property (nonatomic,strong) AVAudioRecorder *audioRecorder;//音频录音机
 @property (nonatomic,strong) AVAudioPlayer *audioPlayer;//音频播放器，用于播放录音文件

@@ -9,10 +9,13 @@
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <CoreAudio/CoreAudioTypes.h>
+@import AssetsLibrary;
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *voiceRecordButton;
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
+@property (weak, nonatomic) IBOutlet UILabel *filePathLabel;
+@property (weak, nonatomic) IBOutlet UILabel *voiceLengthLabel;
 
 @end
 
@@ -54,11 +57,13 @@ NSError *error;
 
 - (void)voiceButtonTouchUpOutside:(UIButton *) button{
     NSLog(@"取消录音");
+    [self.audioRecorder stop];
 }
 
 - (void)playButtonTouchUpInside:(UIButton *) button{
     
     if (![self.audioPlayer isPlaying]) {
+        [self addDistanceNotification];
         [self setAudioSessionPlay];
         [self.audioPlayer play];
         NSLog(@"播放录音");
@@ -74,7 +79,19 @@ NSError *error;
  */
 -(void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag{
     NSLog(@"录音完成!");
+        _filePathLabel.text = [[self getSavePath] absoluteString];
+    float voiceDurationSeconds = [self getVoiceDurationSeconds];
+    _voiceLengthLabel.text = [NSString stringWithFormat:@"%.1lf",voiceDurationSeconds];
 }
+
+
+#pragma mark - 播放器代理方法
+//播放完毕后取消距离监听
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
+    [self removeDistanceNotification];
+}
+
+
 
 #pragma mark - 私有方法
 /**
@@ -105,8 +122,20 @@ NSError *error;
     NSString *urlStr=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     urlStr=[urlStr stringByAppendingPathComponent:@"myrecord.caf"];
     NSLog(@"文件路径:%@",urlStr);
+
     NSURL *url=[NSURL fileURLWithPath:urlStr];
     return url;
+}
+
+-(float)getVoiceDurationSeconds{
+    NSURL * nsurl = [self getSavePath];
+  
+    AVURLAsset* audioAsset =[AVURLAsset URLAssetWithURL:nsurl options:nil];
+    
+    CMTime audioDuration = audioAsset.duration;
+    
+    float audioDurationSeconds =CMTimeGetSeconds(audioDuration);
+    return audioDurationSeconds;
 }
 
 /**
@@ -194,6 +223,43 @@ NSError *error;
     float power= [self.audioRecorder averagePowerForChannel:0];//取得第一个通道的音频，注意音频强度范围时-160到0
     CGFloat progress=(1.0/160.0)*(power+160.0);
     NSLog(@"声音大小%f",progress);
+}
+
+/**
+ *  添加距离通知
+ */
+- (void)addDistanceNotification{
+    //添加近距离事件监听，添加前先设置为YES，如果设置完后还是NO的读话，说明当前设备没有近距离传感器
+    [[UIDevice currentDevice] setProximityMonitoringEnabled:YES];
+    if ([UIDevice currentDevice].proximityMonitoringEnabled == YES) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sensorStateChange:)name:UIDeviceProximityStateDidChangeNotification object:nil];
+    }
+}
+
+/**
+ *  删除距离通知
+ */
+- (void)removeDistanceNotification{
+    //添加近距离事件监听，添加前先设置为YES，如果设置完后还是NO的读话，说明当前设备没有近距离传感器
+    [[UIDevice currentDevice] setProximityMonitoringEnabled:YES];
+    if ([UIDevice currentDevice].proximityMonitoringEnabled == YES) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sensorStateChange:)name:UIDeviceProximityStateDidChangeNotification object:nil];
+    }
+}
+
+
+#pragma mark - 处理近距离监听触发事件
+- (void)sensorStateChange:(NSNotificationCenter *)notification;
+{
+    //如果此时手机靠近面部放在耳朵旁，那么声音将通过听筒输出，并将屏幕变暗（省电啊）
+    if ([[UIDevice currentDevice] proximityState] == YES)//传感器已启动前提条件下，如果用户接近 近距离传感器，此时属性值为YES
+    {
+        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+        
+    }else
+    {
+        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    }
 }
 
 @end
