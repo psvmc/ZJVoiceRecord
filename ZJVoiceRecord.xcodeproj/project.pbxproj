@@ -7,7 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F7B35DC1CB2C02300EAA389 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7B35DB1CB2C02300EAA389 /* AssetsLibrary.framework */; };
+		3F61286E1CB3A44E00C49304 /* voice_record01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F6128641CB3A44E00C49304 /* voice_record01@3x.png */; };
+		3F61286F1CB3A44E00C49304 /* voice_record02@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F6128651CB3A44E00C49304 /* voice_record02@3x.png */; };
+		3F6128701CB3A44E00C49304 /* voice_record03@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F6128661CB3A44E00C49304 /* voice_record03@3x.png */; };
+		3F6128711CB3A44E00C49304 /* voice_record04@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F6128671CB3A44E00C49304 /* voice_record04@3x.png */; };
+		3F6128721CB3A44E00C49304 /* voice_record05@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F6128681CB3A44E00C49304 /* voice_record05@3x.png */; };
+		3F6128731CB3A44E00C49304 /* voice_record06@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F6128691CB3A44E00C49304 /* voice_record06@3x.png */; };
+		3F6128741CB3A44E00C49304 /* voice_record07@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F61286A1CB3A44E00C49304 /* voice_record07@3x.png */; };
+		3F6128751CB3A44E00C49304 /* voice_record08@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F61286B1CB3A44E00C49304 /* voice_record08@3x.png */; };
+		3F6128761CB3A44E00C49304 /* voice_record09@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F61286C1CB3A44E00C49304 /* voice_record09@3x.png */; };
+		3F6128771CB3A44E00C49304 /* voice_record10@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F61286D1CB3A44E00C49304 /* voice_record10@3x.png */; };
+		3F61287B1CB3A4BA00C49304 /* VoiceRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6128791CB3A4BA00C49304 /* VoiceRecordTableViewCell.m */; };
+		3F61287C1CB3A4BA00C49304 /* VoiceRecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F61287A1CB3A4BA00C49304 /* VoiceRecordTableViewCell.xib */; };
+		3F61288E1CB3C36000C49304 /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3F6128811CB3C36000C49304 /* amrFileCodec.mm */; };
+		3F61288F1CB3C36000C49304 /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3F6128831CB3C36000C49304 /* wav.mm */; };
+		3F6128901CB3C36000C49304 /* EMVoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3F6128851CB3C36000C49304 /* EMVoiceConverter.mm */; };
+		3F6128911CB3C36000C49304 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6128891CB3C36000C49304 /* libopencore-amrnb.a */; };
+		3F6128921CB3C36000C49304 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F61288D1CB3C36000C49304 /* libopencore-amrwb.a */; };
 		3F95A1FC1CB2775500E22C14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F95A1FB1CB2775500E22C14 /* main.m */; };
 		3F95A1FF1CB2775500E22C14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F95A1FE1CB2775500E22C14 /* AppDelegate.m */; };
 		3F95A2021CB2775500E22C14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F95A2011CB2775500E22C14 /* ViewController.m */; };
@@ -27,17 +43,34 @@
 			remoteGlobalIDString = 3F95A1F61CB2775400E22C14;
 			remoteInfo = ZJVoiceRecord;
 		};
-		3F95A21C1CB2775500E22C14 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3F95A1EF1CB2775400E22C14 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3F95A1F61CB2775400E22C14;
-			remoteInfo = ZJVoiceRecord;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F7B35DB1CB2C02300EAA389 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		3F6128641CB3A44E00C49304 /* voice_record01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_record01@3x.png"; sourceTree = "<group>"; };
+		3F6128651CB3A44E00C49304 /* voice_record02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_record02@3x.png"; sourceTree = "<group>"; };
+		3F6128661CB3A44E00C49304 /* voice_record03@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_record03@3x.png"; sourceTree = "<group>"; };
+		3F6128671CB3A44E00C49304 /* voice_record04@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_record04@3x.png"; sourceTree = "<group>"; };
+		3F6128681CB3A44E00C49304 /* voice_record05@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_record05@3x.png"; sourceTree = "<group>"; };
+		3F6128691CB3A44E00C49304 /* voice_record06@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_record06@3x.png"; sourceTree = "<group>"; };
+		3F61286A1CB3A44E00C49304 /* voice_record07@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_record07@3x.png"; sourceTree = "<group>"; };
+		3F61286B1CB3A44E00C49304 /* voice_record08@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_record08@3x.png"; sourceTree = "<group>"; };
+		3F61286C1CB3A44E00C49304 /* voice_record09@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_record09@3x.png"; sourceTree = "<group>"; };
+		3F61286D1CB3A44E00C49304 /* voice_record10@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_record10@3x.png"; sourceTree = "<group>"; };
+		3F6128781CB3A4BA00C49304 /* VoiceRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceRecordTableViewCell.h; sourceTree = "<group>"; };
+		3F6128791CB3A4BA00C49304 /* VoiceRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceRecordTableViewCell.m; sourceTree = "<group>"; };
+		3F61287A1CB3A4BA00C49304 /* VoiceRecordTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceRecordTableViewCell.xib; sourceTree = "<group>"; };
+		3F6128801CB3C36000C49304 /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		3F6128811CB3C36000C49304 /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
+		3F6128821CB3C36000C49304 /* wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav.h; sourceTree = "<group>"; };
+		3F6128831CB3C36000C49304 /* wav.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wav.mm; sourceTree = "<group>"; };
+		3F6128841CB3C36000C49304 /* EMVoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMVoiceConverter.h; sourceTree = "<group>"; };
+		3F6128851CB3C36000C49304 /* EMVoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EMVoiceConverter.mm; sourceTree = "<group>"; };
+		3F6128871CB3C36000C49304 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		3F6128881CB3C36000C49304 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		3F6128891CB3C36000C49304 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		3F61288B1CB3C36000C49304 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		3F61288C1CB3C36000C49304 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		3F61288D1CB3C36000C49304 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
 		3F95A1F71CB2775400E22C14 /* ZJVoiceRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJVoiceRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F95A1FB1CB2775500E22C14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F95A1FD1CB2775500E22C14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,7 +84,6 @@
 		3F95A2101CB2775500E22C14 /* ZJVoiceRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJVoiceRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F95A2141CB2775500E22C14 /* ZJVoiceRecordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJVoiceRecordTests.m; sourceTree = "<group>"; };
 		3F95A2161CB2775500E22C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F95A21B1CB2775500E22C14 /* ZJVoiceRecordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJVoiceRecordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F95A22D1CB27B7B00E22C14 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3F95A22F1CB27B8700E22C14 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -61,7 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F7B35DC1CB2C02300EAA389 /* AssetsLibrary.framework in Frameworks */,
+				3F6128921CB3C36000C49304 /* libopencore-amrwb.a in Frameworks */,
+				3F6128911CB3C36000C49304 /* libopencore-amrnb.a in Frameworks */,
 				3F95A2301CB27B8700E22C14 /* CoreAudio.framework in Frameworks */,
 				3F95A22E1CB27B7B00E22C14 /* AVFoundation.framework in Frameworks */,
 			);
@@ -74,16 +107,85 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F95A2181CB2775500E22C14 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F6128621CB3A44E00C49304 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3F6128631CB3A44E00C49304 /* VoiceRecord */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		3F6128631CB3A44E00C49304 /* VoiceRecord */ = {
+			isa = PBXGroup;
+			children = (
+				3F6128641CB3A44E00C49304 /* voice_record01@3x.png */,
+				3F6128651CB3A44E00C49304 /* voice_record02@3x.png */,
+				3F6128661CB3A44E00C49304 /* voice_record03@3x.png */,
+				3F6128671CB3A44E00C49304 /* voice_record04@3x.png */,
+				3F6128681CB3A44E00C49304 /* voice_record05@3x.png */,
+				3F6128691CB3A44E00C49304 /* voice_record06@3x.png */,
+				3F61286A1CB3A44E00C49304 /* voice_record07@3x.png */,
+				3F61286B1CB3A44E00C49304 /* voice_record08@3x.png */,
+				3F61286C1CB3A44E00C49304 /* voice_record09@3x.png */,
+				3F61286D1CB3A44E00C49304 /* voice_record10@3x.png */,
+			);
+			path = VoiceRecord;
+			sourceTree = "<group>";
+		};
+		3F61287D1CB3C36000C49304 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				3F61287E1CB3C36000C49304 /* VoiceConvert */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		3F61287E1CB3C36000C49304 /* VoiceConvert */ = {
+			isa = PBXGroup;
+			children = (
+				3F61287F1CB3C36000C49304 /* amrwapper */,
+				3F6128841CB3C36000C49304 /* EMVoiceConverter.h */,
+				3F6128851CB3C36000C49304 /* EMVoiceConverter.mm */,
+				3F6128861CB3C36000C49304 /* opencore-amrnb */,
+				3F61288A1CB3C36000C49304 /* opencore-amrwb */,
+			);
+			path = VoiceConvert;
+			sourceTree = "<group>";
+		};
+		3F61287F1CB3C36000C49304 /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				3F6128801CB3C36000C49304 /* amrFileCodec.h */,
+				3F6128811CB3C36000C49304 /* amrFileCodec.mm */,
+				3F6128821CB3C36000C49304 /* wav.h */,
+				3F6128831CB3C36000C49304 /* wav.mm */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
+		3F6128861CB3C36000C49304 /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				3F6128871CB3C36000C49304 /* interf_dec.h */,
+				3F6128881CB3C36000C49304 /* interf_enc.h */,
+				3F6128891CB3C36000C49304 /* libopencore-amrnb.a */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		3F61288A1CB3C36000C49304 /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				3F61288B1CB3C36000C49304 /* dec_if.h */,
+				3F61288C1CB3C36000C49304 /* if_rom.h */,
+				3F61288D1CB3C36000C49304 /* libopencore-amrwb.a */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
 		3F95A1EE1CB2775400E22C14 = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +201,6 @@
 			children = (
 				3F95A1F71CB2775400E22C14 /* ZJVoiceRecord.app */,
 				3F95A2101CB2775500E22C14 /* ZJVoiceRecordTests.xctest */,
-				3F95A21B1CB2775500E22C14 /* ZJVoiceRecordUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +208,8 @@
 		3F95A1F91CB2775500E22C14 /* ZJVoiceRecord */ = {
 			isa = PBXGroup;
 			children = (
+				3F61287D1CB3C36000C49304 /* Lib */,
+				3F6128621CB3A44E00C49304 /* Images */,
 				3F95A1FD1CB2775500E22C14 /* AppDelegate.h */,
 				3F95A1FE1CB2775500E22C14 /* AppDelegate.m */,
 				3F95A2001CB2775500E22C14 /* ViewController.h */,
@@ -116,6 +219,9 @@
 				3F95A2081CB2775500E22C14 /* LaunchScreen.storyboard */,
 				3F95A20B1CB2775500E22C14 /* Info.plist */,
 				3F95A1FA1CB2775500E22C14 /* Supporting Files */,
+				3F6128781CB3A4BA00C49304 /* VoiceRecordTableViewCell.h */,
+				3F6128791CB3A4BA00C49304 /* VoiceRecordTableViewCell.m */,
+				3F61287A1CB3A4BA00C49304 /* VoiceRecordTableViewCell.xib */,
 			);
 			path = ZJVoiceRecord;
 			sourceTree = "<group>";
@@ -140,7 +246,6 @@
 		3F95A2311CB27B9600E22C14 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				3F7B35DB1CB2C02300EAA389 /* AssetsLibrary.framework */,
 				3F95A22F1CB27B8700E22C14 /* CoreAudio.framework */,
 				3F95A22D1CB27B7B00E22C14 /* AVFoundation.framework */,
 			);
@@ -185,24 +290,6 @@
 			productReference = 3F95A2101CB2775500E22C14 /* ZJVoiceRecordTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3F95A21A1CB2775500E22C14 /* ZJVoiceRecordUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3F95A22A1CB2775500E22C14 /* Build configuration list for PBXNativeTarget "ZJVoiceRecordUITests" */;
-			buildPhases = (
-				3F95A2171CB2775500E22C14 /* Sources */,
-				3F95A2181CB2775500E22C14 /* Frameworks */,
-				3F95A2191CB2775500E22C14 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3F95A21D1CB2775500E22C14 /* PBXTargetDependency */,
-			);
-			name = ZJVoiceRecordUITests;
-			productName = ZJVoiceRecordUITests;
-			productReference = 3F95A21B1CB2775500E22C14 /* ZJVoiceRecordUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -214,12 +301,9 @@
 				TargetAttributes = {
 					3F95A1F61CB2775400E22C14 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6U6NNJD6PX;
 					};
 					3F95A20F1CB2775500E22C14 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = 3F95A1F61CB2775400E22C14;
-					};
-					3F95A21A1CB2775500E22C14 = {
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 3F95A1F61CB2775400E22C14;
 					};
@@ -240,7 +324,6 @@
 			targets = (
 				3F95A1F61CB2775400E22C14 /* ZJVoiceRecord */,
 				3F95A20F1CB2775500E22C14 /* ZJVoiceRecordTests */,
-				3F95A21A1CB2775500E22C14 /* ZJVoiceRecordUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,20 +333,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6128751CB3A44E00C49304 /* voice_record08@3x.png in Resources */,
+				3F6128731CB3A44E00C49304 /* voice_record06@3x.png in Resources */,
+				3F61286E1CB3A44E00C49304 /* voice_record01@3x.png in Resources */,
+				3F61287C1CB3A4BA00C49304 /* VoiceRecordTableViewCell.xib in Resources */,
+				3F6128711CB3A44E00C49304 /* voice_record04@3x.png in Resources */,
 				3F95A20A1CB2775500E22C14 /* LaunchScreen.storyboard in Resources */,
 				3F95A2071CB2775500E22C14 /* Assets.xcassets in Resources */,
+				3F6128721CB3A44E00C49304 /* voice_record05@3x.png in Resources */,
 				3F95A2051CB2775500E22C14 /* Main.storyboard in Resources */,
+				3F6128761CB3A44E00C49304 /* voice_record09@3x.png in Resources */,
+				3F6128701CB3A44E00C49304 /* voice_record03@3x.png in Resources */,
+				3F6128741CB3A44E00C49304 /* voice_record07@3x.png in Resources */,
+				3F61286F1CB3A44E00C49304 /* voice_record02@3x.png in Resources */,
+				3F6128771CB3A44E00C49304 /* voice_record10@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3F95A20E1CB2775500E22C14 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3F95A2191CB2775500E22C14 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,9 +364,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6128901CB3C36000C49304 /* EMVoiceConverter.mm in Sources */,
 				3F95A2021CB2775500E22C14 /* ViewController.m in Sources */,
+				3F61287B1CB3A4BA00C49304 /* VoiceRecordTableViewCell.m in Sources */,
 				3F95A1FF1CB2775500E22C14 /* AppDelegate.m in Sources */,
 				3F95A1FC1CB2775500E22C14 /* main.m in Sources */,
+				3F61288F1CB3C36000C49304 /* wav.mm in Sources */,
+				3F61288E1CB3C36000C49304 /* amrFileCodec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,13 +382,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F95A2171CB2775500E22C14 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -305,11 +389,6 @@
 			isa = PBXTargetDependency;
 			target = 3F95A1F61CB2775400E22C14 /* ZJVoiceRecord */;
 			targetProxy = 3F95A2111CB2775500E22C14 /* PBXContainerItemProxy */;
-		};
-		3F95A21D1CB2775500E22C14 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3F95A1F61CB2775400E22C14 /* ZJVoiceRecord */;
-			targetProxy = 3F95A21C1CB2775500E22C14 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -417,8 +496,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ZJVoiceRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZJVoiceRecord/Lib/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/ZJVoiceRecord/Lib/VoiceConvert/opencore-amrwb",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.psvmc.ZJVoiceRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -428,8 +515,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ZJVoiceRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZJVoiceRecord/Lib/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/ZJVoiceRecord/Lib/VoiceConvert/opencore-amrwb",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.psvmc.ZJVoiceRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -459,30 +554,6 @@
 			};
 			name = Release;
 		};
-		3F95A22B1CB2775500E22C14 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ZJVoiceRecordUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.psvmc.ZJVoiceRecordUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = ZJVoiceRecord;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		3F95A22C1CB2775500E22C14 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ZJVoiceRecordUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.psvmc.ZJVoiceRecordUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = ZJVoiceRecord;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -509,15 +580,6 @@
 			buildConfigurations = (
 				3F95A2281CB2775500E22C14 /* Debug */,
 				3F95A2291CB2775500E22C14 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3F95A22A1CB2775500E22C14 /* Build configuration list for PBXNativeTarget "ZJVoiceRecordUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3F95A22B1CB2775500E22C14 /* Debug */,
-				3F95A22C1CB2775500E22C14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
