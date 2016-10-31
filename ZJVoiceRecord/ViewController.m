@@ -132,7 +132,7 @@ VoiceRecordTableViewCell *voiceRecordView;
  *  @param flag     是否成功
  */
 -(void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag{
-    NSLog(@"录音完成!");
+    NSLog(@"录音完成");
     _filePathLabel.text = [[self getSavePath] absoluteString];
     float voiceDurationSeconds = [self getVoiceDurationSeconds];
     _voiceLengthLabel.text = [NSString stringWithFormat:@"%.1lf",voiceDurationSeconds];
@@ -230,7 +230,6 @@ VoiceRecordTableViewCell *voiceRecordView;
  *  @return 录音机对象
  */
 -(AVAudioRecorder *)audioRecorder{
-    NSLog(@"AVAudioRecorder初始化了");
     if (!_audioRecorder) {
         //创建录音文件保存路径
         NSURL *url=[self getSavePath];
