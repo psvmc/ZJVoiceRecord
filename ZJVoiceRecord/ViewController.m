@@ -62,14 +62,16 @@ VoiceRecordTableViewCell *voiceRecordView;
 
 - (void)voiceButtonTouchUpInside:(UIButton *) button{
     voiceRecordView.hidden = YES;
-    NSLog(@"发送录音");
     [self.audioRecorder stop];
     self.timer.fireDate=[NSDate distantFuture];
+    NSLog(@"松开录音按钮");
 }
 
 - (void)voiceButtonTouchUpOutside:(UIButton *) button{
     NSLog(@"取消录音");
+    voiceRecordView.hidden = YES;
     [self.audioRecorder stop];
+    self.timer.fireDate=[NSDate distantFuture];
 }
 
 //播放录制的音频文件
@@ -176,8 +178,6 @@ VoiceRecordTableViewCell *voiceRecordView;
 -(NSURL *)getSavePath{
     NSString *urlStr=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     urlStr=[urlStr stringByAppendingPathComponent:@"myrecord.wav"];
-    NSLog(@"文件路径:%@",urlStr);
-
     NSURL *url=[NSURL fileURLWithPath:urlStr];
     return url;
 }
@@ -186,8 +186,6 @@ VoiceRecordTableViewCell *voiceRecordView;
 -(NSURL *)getSavePathAmr{
     NSString *urlStr=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     urlStr=[urlStr stringByAppendingPathComponent:@"myrecord.amr"];
-    NSLog(@"文件路径:%@",urlStr);
-    
     NSURL *url=[NSURL fileURLWithPath:urlStr];
     return url;
 }
@@ -231,6 +229,7 @@ VoiceRecordTableViewCell *voiceRecordView;
  */
 -(AVAudioRecorder *)audioRecorder{
     if (!_audioRecorder) {
+        NSLog(@"AVAudioRecorder初始化了");
         //创建录音文件保存路径
         NSURL *url=[self getSavePath];
         //创建录音格式设置
@@ -287,7 +286,7 @@ VoiceRecordTableViewCell *voiceRecordView;
 -(void)audioPowerChange{
     [self.audioRecorder updateMeters];//更新测量值
     float power= [self.audioRecorder averagePowerForChannel:0];//取得第一个通道的音频，注意音频强度范围时-160到0
-    CGFloat progress=(1.0/40.0)*(power+60.0);
+    CGFloat progress=(1.0/50.0)*(power+60.0);
     [voiceRecordView setImageByVoiceVolume:(int)(progress*10)];
     NSLog(@"音频强度%f",power);
 }
